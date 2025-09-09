@@ -87,7 +87,7 @@ const BirthdayPage = ({ onSurpriseClick }) => {
           </p>
         </div>
 
-        <button className="surprise-btn" onClick={onSurpriseClick}>
+        <button className="surprise-btn " onClick={onSurpriseClick}>
           🎁 Click for Surprise! 🎁
         </button>
 

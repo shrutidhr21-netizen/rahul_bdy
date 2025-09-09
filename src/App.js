@@ -3,6 +3,7 @@ import './App.css';
 import BirthdayPage from './components/BirthdayPage';
 import SurprisePage from './components/SurprisePage';
 import LovePopup from './components/LovePopup';
+import Footer from './components/Footer';  // Import Footer
 
 function App() {
   const [showPopup, setShowPopup] = useState(true);
@@ -34,6 +35,8 @@ function App() {
       {showPopup && <LovePopup onResponse={handleLoveResponse} />}
       {showBirthday && <BirthdayPage onSurpriseClick={handleSurpriseClick} />}
       {showSurprise && <SurprisePage onBack={handleBackToBirthday} />}
+
+      <Footer />
     </div>
   );
 }
