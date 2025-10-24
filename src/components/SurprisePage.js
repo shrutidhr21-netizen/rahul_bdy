@@ -103,10 +103,10 @@ const SurprisePage = ({ onBack }) => {
     "/r-23.jpg",
     "/r-24.jpg",
     "/r-25.jpg",
-    "/r-26.jpg",
-    "/r-27.jpg",
-    "/r-28.jpg",
-    "/r-29.jpg"
+    "/r-26.jpeg",
+    "/r-27.jpeg",
+    "/r-28.jpeg",
+    "/r-29.jpeg"
   ];
 
   const randomVideos = [
