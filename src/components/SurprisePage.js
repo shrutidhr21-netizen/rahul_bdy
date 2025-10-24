@@ -102,20 +102,20 @@ const SurprisePage = ({ onBack }) => {
     "/r-22.jpg",
     "/r-23.jpg",
     "/r-24.jpg",
-    "/r-25.jpg"
+    "/r-25.jpg",
+    "/r-26.jpg",
+    "/r-27.jpg",
+    "/r-28.jpg",
+    "/r-29.jpg"
   ];
 
   const randomVideos = [
-    "/demo.mp4",
-    "/demo.mp4",
-    "/demo.mp4",
-    "/demo.mp4",
-    "/demo.mp4",
-    "/demo.mp4",
-    "/demo.mp4",
-    "/demo.mp4",
-    "/demo.mp4",
-    "/demo.mp4"
+    "/1vid.mp4",
+    "/2vid.mp4",
+    "/3vid.mp4",
+    "/4vid.mp4",
+    "/5vid.mp4"
+
   ];
 
   const getRandomContent = () => {

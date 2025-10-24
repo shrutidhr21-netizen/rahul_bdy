@@ -15,7 +15,7 @@ const LovePopup = ({ onResponse }) => {
     <div className={`popup-overlay ${animate ? "fade-out" : ""}`}>
       <div className={`popup-container ${animate ? "zoom-out" : ""}`}>
         <div className="popup-content">
-          <h2 className="popup-question">Do you love Shruti?</h2>
+          <h2 className="popup-question">Do you Love Shruti?</h2>
           <div className="popup-buttons">
             <button className="popup-btn yes-btn" onClick={handleYesClick}>
               Yes ❤️
