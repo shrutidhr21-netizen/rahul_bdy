@@ -4,14 +4,14 @@ import ImageCarousel from './ImageCarousel';
 
 const BirthdayPage = ({ onSurpriseClick }) => {
   const audioRef = useRef(null);
-  const [animate, setAnimate] = useState(false);  // ✅ moved inside component
+  const [animate, setAnimate] = useState(false);
+  const [showLetter, setShowLetter] = useState(false); // 🧡 for letter open/close
 
   useEffect(() => {
-    setAnimate(true); // ✅ page load hote hi animation trigger
+    setAnimate(true);
   }, []);
 
   useEffect(() => {
-    // Auto-play background music
     if (audioRef.current) {
       audioRef.current.play().catch(e => {
         console.log('Auto-play prevented:', e);
@@ -19,7 +19,6 @@ const BirthdayPage = ({ onSurpriseClick }) => {
     }
   }, []);
 
-  // ✅ Carousel Images
   const carouselImages = [
     { src: '/r-3.jpg', alt: 'Birthday Memory 1', caption: 'Rahul, your smile brightens every room ✨' },
     { src: '/r-7.jpg', alt: 'Birthday Memory 2', caption: 'Wishing Rahul endless happiness today 💕' },
@@ -69,9 +68,7 @@ const BirthdayPage = ({ onSurpriseClick }) => {
       </div>
 
       <div className="content">
-        <h1 className="birthday-message">
-          Happy Birthday Virat 🎉
-        </h1>
+        <h1 className="birthday-message">Happy Birthday Virat 🎉</h1>
 
         <div className="celebration-text">
           <p>
@@ -79,24 +76,67 @@ const BirthdayPage = ({ onSurpriseClick }) => {
           </p>
         </div>
 
+        {/* 🐼 Panda Section */}
+        <div className="panda-section" onClick={() => setShowLetter(true)}>
+          <img
+            src="/panda-holding-letter.png"
+            alt="Cute Panda Holding a Letter"
+            className="panda-image"
+          />
+          <p className="panda-text">
+            Click me to open your letter 💌
+          </p>
+        </div>
+
+        {/* 💌 Letter Popup */}
+        {showLetter && (
+          <div className="letter-popup" onClick={() => setShowLetter(false)}>
+            <div className="letter-content">
+              <h3>Dear Rahul 💖</h3>
+              <p>
+                You are one of the most beautiful souls I’ve ever known — kind, honest, and full of love.
+                On your special day, I just want to remind you how truly amazing you are, not only for what you do but for the wonderful person you are inside.
+                <br /><br />
+                The way you care for your family, support your friends, and spread happiness is rare and precious.
+                You always put others before yourself, and I truly believe the world needs more people like you.
+                God has made you one of His best creations — a son, a friend, and a human being to be proud of.
+                <br /><br />
+                Rahul, you inspire everyone with your kindness and strength.
+                You might not say much, but your actions show the depth of your heart.
+                May this birthday bring you endless happiness, success, and peace.
+                <br /><br />
+                Never stop being the amazing person you are — you’re truly one in a million.
+                Happy Birthday, Rahul 🎂✨💖
+                You mean so much to me — today and always. 💞
+              </p>
+              <span className="close-note">(Click anywhere to close 💌)</span>
+            </div>
+          </div>
+        )}
+
+
         {/* ✅ Special Message Section */}
         <div className="special-message">
           <h2>A Special Message for You 💌</h2>
           <p>
-            Rahul, you're not just an incredible person, you're the one who makes my heart smile every day. On your birthday, I wish you endless happiness, love, and all the success in the world. May your dreams come true, and may this year be filled with unforgettable moments—especially the ones we share together. ❤️🎂✨
+            Rahul, you're not just an incredible person, you're the one who makes my heart smile every day.
+            On your birthday, I wish you endless happiness, love, and all the success in the world.
+            May your dreams come true, and may this year be filled with unforgettable moments—especially the ones we share together. ❤️🎂✨
           </p>
         </div>
 
-        <button className="surprise-btn " onClick={onSurpriseClick}>
+        <button className="surprise-btn" onClick={onSurpriseClick}>
           🎁 Click for Surprise! 🎁
         </button>
 
-        {/* ✅ New Image Carousel Section */}
+        {/* ✅ Image Carousel Section */}
         <ImageCarousel
           images={carouselImages}
           autoPlay={true}
           autoPlayInterval={4000}
         />
+
+
 
         <div className="hearts-container">
           {Array.from({ length: 30 }).map((_, i) => (
