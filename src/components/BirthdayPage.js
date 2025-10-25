@@ -99,10 +99,10 @@ const BirthdayPage = ({ onSurpriseClick }) => {
                 <br /><br />
                 The way you care for your family, support your friends, and spread happiness is rare and precious.
                 You always put others before yourself, and I truly believe the world needs more people like you.
-                God has made you one of His best creations — a son, a friend, and a human being to be proud of.
+                God has made you one of His best creations — a son, a friend, and a human being to be proud of 💌.
                 <br /><br />
                 Rahul, you inspire everyone with your kindness and strength.
-                You might not say much, but your actions show the depth of your heart.
+                You might not say much, but your actions show the depth of your heart ❤️🎂✨.
                 May this birthday bring you endless happiness, success, and peace.
                 <br /><br />
                 Never stop being the amazing person you are — you’re truly one in a million.
@@ -115,15 +115,15 @@ const BirthdayPage = ({ onSurpriseClick }) => {
         )}
 
 
-        {/* ✅ Special Message Section */}
+        {/* ✅ Special Message Section
         <div className="special-message">
           <h2>A Special Message for You 💌</h2>
           <p>
             Rahul, you're not just an incredible person, you're the one who makes my heart smile every day.
             On your birthday, I wish you endless happiness, love, and all the success in the world.
-            May your dreams come true, and may this year be filled with unforgettable moments—especially the ones we share together. ❤️🎂✨
+            May your dreams come true, and may this year be filled with unforgettable moments—especially the ones we share together.
           </p>
-        </div>
+        </div> */}
 
         <button className="surprise-btn" onClick={onSurpriseClick}>
           🎁 Click for Surprise! 🎁

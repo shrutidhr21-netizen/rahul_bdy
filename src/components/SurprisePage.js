@@ -11,11 +11,8 @@ const SurprisePage = ({ onBack }) => {
     { id: 3, type: 'text', title: 'Best Friend Forever', content: 'Grateful to have you as a friend 🙌', image: '🎁' },
     { id: 4, type: 'text', title: 'Our Rockstar', content: 'Rahul, you shine wherever you go 🌟', image: '🎸' },
     { id: 5, type: 'text', title: 'Happiness Spreader', content: 'Your laughter is pure magic ✨', image: '😂' },
-    { id: 6, type: 'text', title: 'The Most Caring Person', content: 'Always ready to help and support 💕', image: '🤝' },
-    { id: 7, type: 'text', title: 'Bundle of Joy', content: 'Rahul, you bring joy to every gathering 🎊', image: '🥳' },
-    { id: 8, type: 'text', title: 'Positive Vibes Only', content: 'Your positivity inspires everyone 🌈', image: '☀️' },
-    { id: 9, type: 'text', title: 'True Inspiration', content: 'Rahul, you motivate us with your kindness ✨', image: '💡' },
-    { id: 10, type: 'text', title: 'Forever Special', content: 'You’re one in a million, Rahul ❤️', image: '💝' }
+    { id: 6, type: 'text', title: 'The Most Caring Person', content: 'Always ready to help and support 💕', image: '🤝' }
+
   ];
 
   const flowerCards = [
@@ -63,13 +60,9 @@ const SurprisePage = ({ onBack }) => {
     "🎉 Surprise! Hope your day is as amazing as you are!",
     "🌟 Another year of awesome adventures awaits you!",
     "💫 May this birthday bring you endless happiness!",
-    "🎈 Celebrating you today and always!",
-    "✨ Wishing you magic and wonder on your special day!",
-    "🎂 Here's to another year of incredible memories!",
-    "🌈 May your birthday be filled with rainbow moments!",
-    "🎊 Party time! Let's celebrate your awesomeness!",
-    "💖 Sending you love and birthday wishes!",
-    "🎁 You deserve all the happiness in the world!"
+    "🎈 Celebrating you today and always!"
+
+
   ];
 
   const randomImages = [
